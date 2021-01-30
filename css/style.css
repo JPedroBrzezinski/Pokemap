@@ -1,0 +1,114 @@
+/* 
+    O código CSS funciona basicamente de uma maneira:
+    
+    propriedade: estilo;
+
+    exemplo -->
+    color: white; --> cor das palavras
+    font-size: 30px; --> tamanho da fonte
+    width: 400px; --> largura de uma tag
+    ...
+
+    A seleção de tags funcionam da seguinte maneira:
+
+    body {
+
+    }
+
+    div {
+
+    }
+
+    caso eu queira selecionar uma div com um ID específico:
+    
+    div#idEspecífico {
+
+    }
+*/
+
+body {
+    background-color: #40E0D0;
+
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 300px;
+
+}
+
+header {
+    background-color: #5F9EA0;
+    color: white;
+    font-size: 40px;
+
+    margin-bottom: 120px;
+
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+    display: flex;
+    width: 50%;
+
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+
+form > #pesquisaCity {
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 30px;
+    border-style: none;
+    
+}
+
+form > [type=submit] {
+    font-size: 40px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: solid 3px black;
+    box-shadow: 5px 5px 5px #5F9EA0;
+}
+
+[type=submit]:hover {
+    transition: 400ms;
+    background-color: #5F9EA0;
+    color: white;
+}
+
+main > ul {
+    align-self: flex-start;
+    margin-left: 400px;
+}
+
+main > ul > li {
+    list-style-type: circle;
+    font-size: 40px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #5F9EA0;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    text-align: center;
+}
