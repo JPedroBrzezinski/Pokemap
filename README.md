@@ -13,3 +13,9 @@
 
 
 [![jquery](https://img.shields.io/static/v1?label=&message=jQuery&color=0769AD&style=flat&logo=jQuery)](https://github.com/JPedroBrzezinski)
+
+---
+### Para inicializar o Servidor, execute o seguinte comando:
+ ```js
+node server.js
+```
